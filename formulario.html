@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Subir Archivos</title>
+    </head>
+    <body>
+        <form action="procesarSubir.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Formulario para Subir Archivos</legend>
+                <label>Nombre</label>
+                <input type="text" name="nombre">
+                <input type="file" name="archivos[]" multiple/><br/>
+                <input type="radio" name="opcion" value="1"/>Reemplazar<br/>
+                <input type="radio" name="opcion" value="2" checked="checked" />Renombrar<br/>
+                <br/>
+                <input type="submit" value="Subir" />
+            </fieldset>
+        </form>
+    </body>
+</html>
